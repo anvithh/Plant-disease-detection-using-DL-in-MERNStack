@@ -13,7 +13,7 @@ const app = express()
 app.use(cors());
 //Middleware to make use of express json module to handle JSON data transfer
 app.use(express.json())
-app.use(cors())
+app.use(cors()) 
 //Middleware to make use of API requests
 app.use('/api/v1/trial', require("./routes/contactRoutes"))
 app.use('/api/v1/users', require("./routes/registerRoutes"))
